@@ -1,0 +1,23 @@
+{% extends "base_template.html" %}
+
+{% block page_title %}
+Checkout
+{% endblock %}
+
+{% block tab_title %}
+Checkout
+{% endblock %}
+
+{% block content %}
+<div class="common_content_container cool_box">
+    <p class="regular_text">
+        Thank you for using our service!
+    </p>
+    <p class="regular_text">
+        The checkout will be sent to your email: {{email}}
+    </p>
+    <p class="regular_text">
+        If you want to go back to main page <a href="/">press here!</a>
+    </p>
+</div>
+{% endblock %}

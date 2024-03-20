@@ -1,0 +1,118 @@
+{% extends "base_template.html" %}
+
+{% block stylesheet%}
+<link rel="stylesheet" type="text/css" href="static/css/choose_flight.css">
+{% endblock %}
+
+{% block scripts %}
+<script src="static/js/jquery-3.7.1.min.js"></script>
+<script src="static/js/templates.js"></script>
+<script src="static/js/choose_flight.js" defer></script>
+{% endblock %}
+
+{% block page_title %}Flights{% endblock %}
+{% block tab_title %}Flights{% endblock %}
+
+{% block content %}
+
+<div id='form_container' class="common_content_container flex_column">
+    <div class="flex_row">
+        <select autocomplete="off" class="flight_selector" id="flight_type" onchange="check_flight_type(this)">
+            <option value="oneway">One way</option>
+            <option value="round" selected="selected">Round trip</option>
+        </select>
+
+        <select autocomplete="off"  class="flight_selector" id="flight_class">
+            <option value="economy" selected="selected">Economy</option>
+            <option value="business">Business</option>
+            <option value="first">First</option>
+        </select>
+
+        <div class="passenger_selector flight_selector ">
+		    <button id='passenger_inside_btn' class="flex-row" onclick="passengers_dropdown()">
+                <img id='human_icon' src="/static/img/person-svgrepo-com.svg">
+		        <span id="passenger_count_display">1</span>
+		    </button>
+		    <div id="dropdown-content">
+                <table>
+                    <tr>
+                        <td>
+                            <span class="category-label">Adult</span>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="decrementPassenger('adult')">-</button>
+                        </td>
+                        <td>
+                            <span id="adult-count" class="passenger-count">1</span>
+                        </td>
+                        <td>
+                             <button class="btn" onclick="incrementPassenger('adult')">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="category-label">Children</span>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="decrementPassenger('child')">-</button>
+                        </td>
+                        <td>
+                            <span id="child-count" class="passenger-count">0</span>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="incrementPassenger('child')">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <button id="btn_hide" onclick="hide_passengers()">Done</button>
+                        </td>
+                    </tr>
+                </table>
+		    </div>
+        </div>
+    </div>
+
+    <div id='main_form'>
+        <div class="flex_column">
+            <div class="form_field">
+                <div class="pseudo_input flex_row">
+                    <img class="input_icon" src="static/img/departures.png">
+                    <input autocomplete="off" class="destination" placeholder="From where" id='input_from' type="text" oninput="select_from.on_input()"  onkeydown="select_from.list_arrows(event)">
+                </div>
+                <div class="flex_column exp" id='from_list'></div>
+            </div>
+            <span class='flight_tooltip' id="tip_from">Please, fill in departure</span>
+        </div>
+        <div class="flex_column">
+            <div class="form_field">
+                <div class="pseudo_input flex_row">
+                    <img class="input_icon" src="static/img/arrivals.png">
+                    <input autocomplete="off" class="destination" placeholder="To where" id='input_to' type="text" oninput="select_to.on_input()"  onkeydown="select_to.list_arrows(event)">
+                </div>
+                <div class="flex_column exp" id='to_list'></div>
+            </div>
+            <span class='flight_tooltip' id="tip_to">Please, fill in arrival</span>
+        </div>
+        <div class="flex_column">
+            <input autocomplete="off" placeholder='Departure' class="date form_field" type="text" id="date_in" min="{{today}}" onfocus="(this.type='date')" oninput="departure_date(this)">
+            <span class='flight_tooltip' id="tip_arrival">Please, fill in arrival date</span>
+        </div>
+        <div class="flex_column">
+            <input autocomplete="off" placeholder='Return' class="date form_field" type="text" id="date_out" min="{{today}}" onfocus="(this.type='date')"  oninput="return_date(this)">
+            <span class='flight_tooltip' id="tip_return">Please, fill in return date</span>
+        </div>
+    </div>
+    <button id='confirm_data' onclick="confirm_data()">
+        Search
+    </button>
+</div>
+
+<div class="common_content_container flex_column">
+    <p class="common_text">Available flights:</p>
+    <hr class ='divider'>
+    <div id="flights_result">
+    </div>
+</div>
+
+{% endblock %}

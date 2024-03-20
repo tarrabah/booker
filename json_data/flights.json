@@ -1,0 +1,1112 @@
+[
+    {
+        "departure_point": "KUL",
+        "destination_point": "HND",
+        "departure_time": "2024-04-01T08:00:00",
+        "arrival_time": "2024-04-01T14:00:00",
+        "duration": "6 hours",
+        "class": "economy",
+        "cost_usd": 300,
+        "id": 0
+    },
+    {
+        "departure_point": "HND",
+        "destination_point": "ICN",
+        "departure_time": "2024-04-02T10:30:00",
+        "arrival_time": "2024-04-02T13:30:00",
+        "duration": "3 hours",
+        "class": "business",
+        "cost_usd": 450,
+        "id": 1
+    },
+    {
+        "departure_point": "ICN",
+        "destination_point": "BKK",
+        "departure_time": "2024-04-03T09:00:00",
+        "arrival_time": "2024-04-03T11:30:00",
+        "duration": "2.5 hours",
+        "class": "first",
+        "cost_usd": 600,
+        "id": 2
+    },
+    {
+        "departure_point": "BKK",
+        "destination_point": "SIN",
+        "departure_time": "2024-04-04T12:00:00",
+        "arrival_time": "2024-04-04T14:30:00",
+        "duration": "2.5 hours",
+        "class": "economy",
+        "cost_usd": 250,
+        "id": 3
+    },
+    {
+        "departure_point": "SIN",
+        "destination_point": "KUL",
+        "departure_time": "2024-04-05T08:00:00",
+        "arrival_time": "2024-04-05T09:00:00",
+        "duration": "1 hour",
+        "class": "business",
+        "cost_usd": 400,
+        "id": 4
+    },
+    {
+        "departure_point": "KUL",
+        "destination_point": "ICN",
+        "departure_time": "2024-04-06T10:30:00",
+        "arrival_time": "2024-04-06T16:00:00",
+        "duration": "5.5 hours",
+        "class": "first",
+        "cost_usd": 550,
+        "id": 5
+    },
+    {
+        "departure_point": "ICN",
+        "destination_point": "HND",
+        "departure_time": "2024-04-07T09:00:00",
+        "arrival_time": "2024-04-07T12:00:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 300,
+        "id": 6
+    },
+    {
+        "departure_point": "HND",
+        "destination_point": "BKK",
+        "departure_time": "2024-04-08T12:00:00",
+        "arrival_time": "2024-04-08T15:00:00",
+        "duration": "3 hours",
+        "class": "business",
+        "cost_usd": 450,
+        "id": 7
+    },
+    {
+        "departure_point": "BKK",
+        "destination_point": "SIN",
+        "departure_time": "2024-04-09T08:30:00",
+        "arrival_time": "2024-04-09T11:00:00",
+        "duration": "2.5 hours",
+        "class": "first",
+        "cost_usd": 600,
+        "id": 8
+    },
+    {
+        "departure_point": "SIN",
+        "destination_point": "KUL",
+        "departure_time": "2024-04-10T10:00:00",
+        "arrival_time": "2024-04-10T11:00:00",
+        "duration": "1 hour",
+        "class": "economy",
+        "cost_usd": 250,
+        "id": 9
+    },
+    {
+        "departure_point": "KUL",
+        "destination_point": "BKK",
+        "departure_time": "2024-04-11T08:00:00",
+        "arrival_time": "2024-04-11T09:00:00",
+        "duration": "1 hour",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 10
+    },
+    {
+        "departure_point": "BKK",
+        "destination_point": "SIN",
+        "departure_time": "2024-04-12T10:30:00",
+        "arrival_time": "2024-04-12T13:30:00",
+        "duration": "3 hours",
+        "class": "business",
+        "cost_usd": 300,
+        "id": 11
+    },
+    {
+        "departure_point": "SIN",
+        "destination_point": "ICN",
+        "departure_time": "2024-04-13T09:00:00",
+        "arrival_time": "2024-04-13T14:00:00",
+        "duration": "5 hours",
+        "class": "first",
+        "cost_usd": 500,
+        "id": 12
+    },
+    {
+        "departure_point": "ICN",
+        "destination_point": "HND",
+        "departure_time": "2024-04-14T12:00:00",
+        "arrival_time": "2024-04-14T16:00:00",
+        "duration": "4 hours",
+        "class": "economy",
+        "cost_usd": 250,
+        "id": 13
+    },
+    {
+        "departure_point": "HND",
+        "destination_point": "KUL",
+        "departure_time": "2024-04-15T08:00:00",
+        "arrival_time": "2024-04-15T11:00:00",
+        "duration": "3 hours",
+        "class": "business",
+        "cost_usd": 400,
+        "id": 14
+    },
+    {
+        "departure_point": "KUL",
+        "destination_point": "ICN",
+        "departure_time": "2024-04-16T10:30:00",
+        "arrival_time": "2024-04-16T16:30:00",
+        "duration": "6 hours",
+        "class": "first",
+        "cost_usd": 600,
+        "id": 15
+    },
+    {
+        "departure_point": "ICN",
+        "destination_point": "BKK",
+        "departure_time": "2024-04-17T09:00:00",
+        "arrival_time": "2024-04-17T12:30:00",
+        "duration": "3.5 hours",
+        "class": "economy",
+        "cost_usd": 200,
+        "id": 16
+    },
+    {
+        "departure_point": "BKK",
+        "destination_point": "SIN",
+        "departure_time": "2024-04-18T12:00:00",
+        "arrival_time": "2024-04-18T15:30:00",
+        "duration": "3.5 hours",
+        "class": "business",
+        "cost_usd": 350,
+        "id": 17
+    },
+    {
+        "departure_point": "SIN",
+        "destination_point": "KUL",
+        "departure_time": "2024-04-19T08:30:00",
+        "arrival_time": "2024-04-19T09:30:00",
+        "duration": "1 hour",
+        "class": "first",
+        "cost_usd": 200,
+        "id": 18
+    },
+    {
+        "departure_point": "KUL",
+        "destination_point": "HND",
+        "departure_time": "2024-04-20T10:00:00",
+        "arrival_time": "2024-04-20T14:00:00",
+        "duration": "4 hours",
+        "class": "economy",
+        "cost_usd": 300,
+        "id": 19
+    },
+    {
+        "departure_point": "LHR",
+        "destination_point": "AMS",
+        "departure_time": "2024-04-01T08:00:00",
+        "arrival_time": "2024-04-01T09:30:00",
+        "duration": "1.5 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 20
+    },
+    {
+        "departure_point": "AMS",
+        "destination_point": "FRA",
+        "departure_time": "2024-04-02T10:30:00",
+        "arrival_time": "2024-04-02T12:00:00",
+        "duration": "1.5 hours",
+        "class": "business",
+        "cost_usd": 200,
+        "id": 21
+    },
+    {
+        "departure_point": "FRA",
+        "destination_point": "IST",
+        "departure_time": "2024-04-03T09:00:00",
+        "arrival_time": "2024-04-03T12:00:00",
+        "duration": "3 hours",
+        "class": "first",
+        "cost_usd": 350,
+        "id": 22
+    },
+    {
+        "departure_point": "IST",
+        "destination_point": "CDG",
+        "departure_time": "2024-04-04T12:00:00",
+        "arrival_time": "2024-04-04T15:00:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 250,
+        "id": 23
+    },
+    {
+        "departure_point": "CDG",
+        "destination_point": "LHR",
+        "departure_time": "2024-04-05T10:00:00",
+        "arrival_time": "2024-04-05T12:00:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 300,
+        "id": 24
+    },
+    {
+        "departure_point": "LHR",
+        "destination_point": "FRA",
+        "departure_time": "2024-04-06T10:30:00",
+        "arrival_time": "2024-04-06T12:30:00",
+        "duration": "2 hours",
+        "class": "first",
+        "cost_usd": 400,
+        "id": 25
+    },
+    {
+        "departure_point": "FRA",
+        "destination_point": "AMS",
+        "departure_time": "2024-04-07T09:00:00",
+        "arrival_time": "2024-04-07T10:30:00",
+        "duration": "1.5 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 26
+    },
+    {
+        "departure_point": "AMS",
+        "destination_point": "IST",
+        "departure_time": "2024-04-08T12:00:00",
+        "arrival_time": "2024-04-08T15:00:00",
+        "duration": "3 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 27
+    },
+    {
+        "departure_point": "IST",
+        "destination_point": "CDG",
+        "departure_time": "2024-04-09T08:30:00",
+        "arrival_time": "2024-04-09T11:30:00",
+        "duration": "3 hours",
+        "class": "first",
+        "cost_usd": 350,
+        "id": 28
+    },
+    {
+        "departure_point": "CDG",
+        "destination_point": "LHR",
+        "departure_time": "2024-04-10T10:00:00",
+        "arrival_time": "2024-04-10T12:00:00",
+        "duration": "2 hours",
+        "class": "economy",
+        "cost_usd": 200,
+        "id": 29
+    },
+    {
+        "departure_point": "LHR",
+        "destination_point": "IST",
+        "departure_time": "2024-04-11T08:30:00",
+        "arrival_time": "2024-04-11T11:30:00",
+        "duration": "3 hours",
+        "class": "business",
+        "cost_usd": 300,
+        "id": 30
+    },
+    {
+        "departure_point": "IST",
+        "destination_point": "FRA",
+        "departure_time": "2024-04-12T10:00:00",
+        "arrival_time": "2024-04-12T13:00:00",
+        "duration": "3 hours",
+        "class": "first",
+        "cost_usd": 400,
+        "id": 31
+    },
+    {
+        "departure_point": "FRA",
+        "destination_point": "AMS",
+        "departure_time": "2024-04-13T12:30:00",
+        "arrival_time": "2024-04-13T14:00:00",
+        "duration": "1.5 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 32
+    },
+    {
+        "departure_point": "AMS",
+        "destination_point": "CDG",
+        "departure_time": "2024-04-14T09:00:00",
+        "arrival_time": "2024-04-14T10:30:00",
+        "duration": "1.5 hours",
+        "class": "business",
+        "cost_usd": 200,
+        "id": 33
+    },
+    {
+        "departure_point": "CDG",
+        "destination_point": "LHR",
+        "departure_time": "2024-04-15T10:00:00",
+        "arrival_time": "2024-04-15T12:00:00",
+        "duration": "2 hours",
+        "class": "first",
+        "cost_usd": 250,
+        "id": 34
+    },
+    {
+        "departure_point": "LHR",
+        "destination_point": "AMS",
+        "departure_time": "2024-04-16T11:00:00",
+        "arrival_time": "2024-04-16T12:30:00",
+        "duration": "1.5 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 35
+    },
+    {
+        "departure_point": "AMS",
+        "destination_point": "FRA",
+        "departure_time": "2024-04-17T10:30:00",
+        "arrival_time": "2024-04-17T12:00:00",
+        "duration": "1.5 hours",
+        "class": "business",
+        "cost_usd": 200,
+        "id": 36
+    },
+    {
+        "departure_point": "FRA",
+        "destination_point": "IST",
+        "departure_time": "2024-04-18T09:00:00",
+        "arrival_time": "2024-04-18T12:00:00",
+        "duration": "3 hours",
+        "class": "first",
+        "cost_usd": 350,
+        "id": 37
+    },
+    {
+        "departure_point": "IST",
+        "destination_point": "CDG",
+        "departure_time": "2024-04-19T12:00:00",
+        "arrival_time": "2024-04-19T15:00:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 250,
+        "id": 38
+    },
+    {
+        "departure_point": "CDG",
+        "destination_point": "LHR",
+        "departure_time": "2024-04-20T08:00:00",
+        "arrival_time": "2024-04-20T10:00:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 300,
+        "id": 39
+    },
+    {
+        "departure_point": "MUC",
+        "destination_point": "MAD",
+        "departure_time": "2024-04-01T08:00:00",
+        "arrival_time": "2024-04-01T10:30:00",
+        "duration": "2.5 hours",
+        "class": "economy",
+        "cost_usd": 200,
+        "id": 40
+    },
+    {
+        "departure_point": "MAD",
+        "destination_point": "AMS",
+        "departure_time": "2024-04-02T10:30:00",
+        "arrival_time": "2024-04-02T12:30:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 41
+    },
+    {
+        "departure_point": "AMS",
+        "destination_point": "FRA",
+        "departure_time": "2024-04-03T09:00:00",
+        "arrival_time": "2024-04-03T10:30:00",
+        "duration": "1.5 hours",
+        "class": "first",
+        "cost_usd": 300,
+        "id": 42
+    },
+    {
+        "departure_point": "FRA",
+        "destination_point": "LHR",
+        "departure_time": "2024-04-04T12:00:00",
+        "arrival_time": "2024-04-04T14:00:00",
+        "duration": "2 hours",
+        "class": "economy",
+        "cost_usd": 200,
+        "id": 43
+    },
+    {
+        "departure_point": "LHR",
+        "destination_point": "MUC",
+        "departure_time": "2024-04-05T08:00:00",
+        "arrival_time": "2024-04-05T10:00:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 44
+    },
+    {
+        "departure_point": "MUC",
+        "destination_point": "MAD",
+        "departure_time": "2024-04-06T10:30:00",
+        "arrival_time": "2024-04-06T13:00:00",
+        "duration": "2.5 hours",
+        "class": "first",
+        "cost_usd": 300,
+        "id": 45
+    },
+    {
+        "departure_point": "MAD",
+        "destination_point": "AMS",
+        "departure_time": "2024-04-07T09:00:00",
+        "arrival_time": "2024-04-07T10:30:00",
+        "duration": "1.5 hours",
+        "class": "economy",
+        "cost_usd": 200,
+        "id": 46
+    },
+    {
+        "departure_point": "AMS",
+        "destination_point": "FRA",
+        "departure_time": "2024-04-08T12:00:00",
+        "arrival_time": "2024-04-08T14:00:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 47
+    },
+    {
+        "departure_point": "FRA",
+        "destination_point": "LHR",
+        "departure_time": "2024-04-09T08:30:00",
+        "arrival_time": "2024-04-09T10:30:00",
+        "duration": "2 hours",
+        "class": "first",
+        "cost_usd": 300,
+        "id": 48
+    },
+    {
+        "departure_point": "LHR",
+        "destination_point": "MUC",
+        "departure_time": "2024-04-10T10:00:00",
+        "arrival_time": "2024-04-10T12:00:00",
+        "duration": "2 hours",
+        "class": "economy",
+        "cost_usd": 200,
+        "id": 49
+    },
+    {
+        "departure_point": "DXB",
+        "destination_point": "DOH",
+        "departure_time": "2024-04-01T08:00:00",
+        "arrival_time": "2024-04-01T09:00:00",
+        "duration": "1 hour",
+        "class": "economy",
+        "cost_usd": 100,
+        "id": 50
+    },
+    {
+        "departure_point": "DOH",
+        "destination_point": "JNB",
+        "departure_time": "2024-04-02T10:30:00",
+        "arrival_time": "2024-04-02T16:30:00",
+        "duration": "6 hours",
+        "class": "business",
+        "cost_usd": 400,
+        "id": 51
+    },
+    {
+        "departure_point": "JNB",
+        "destination_point": "RUH",
+        "departure_time": "2024-04-03T09:00:00",
+        "arrival_time": "2024-04-03T11:00:00",
+        "duration": "2 hours",
+        "class": "first",
+        "cost_usd": 200,
+        "id": 52
+    },
+    {
+        "departure_point": "RUH",
+        "destination_point": "SAW",
+        "departure_time": "2024-04-04T12:00:00",
+        "arrival_time": "2024-04-04T15:00:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 53
+    },
+    {
+        "departure_point": "SAW",
+        "destination_point": "DXB",
+        "departure_time": "2024-04-05T08:00:00",
+        "arrival_time": "2024-04-05T10:00:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 300,
+        "id": 54
+    },
+    {
+        "departure_point": "DXB",
+        "destination_point": "DOH",
+        "departure_time": "2024-04-06T10:30:00",
+        "arrival_time": "2024-04-06T11:30:00",
+        "duration": "1 hour",
+        "class": "first",
+        "cost_usd": 200,
+        "id": 55
+    },
+    {
+        "departure_point": "DOH",
+        "destination_point": "JNB",
+        "departure_time": "2024-04-07T09:00:00",
+        "arrival_time": "2024-04-07T15:00:00",
+        "duration": "6 hours",
+        "class": "economy",
+        "cost_usd": 300,
+        "id": 56
+    },
+    {
+        "departure_point": "JNB",
+        "destination_point": "RUH",
+        "departure_time": "2024-04-08T12:00:00",
+        "arrival_time": "2024-04-08T14:00:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 200,
+        "id": 57
+    },
+    {
+        "departure_point": "RUH",
+        "destination_point": "SAW",
+        "departure_time": "2024-04-09T08:30:00",
+        "arrival_time": "2024-04-09T11:30:00",
+        "duration": "3 hours",
+        "class": "first",
+        "cost_usd": 250,
+        "id": 58
+    },
+    {
+        "departure_point": "SAW",
+        "destination_point": "DXB",
+        "departure_time": "2024-04-10T10:00:00",
+        "arrival_time": "2024-04-10T12:00:00",
+        "duration": "2 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 59
+    },
+    {
+        "departure_point": "DXB",
+        "destination_point": "DOH",
+        "departure_time": "2024-04-11T08:30:00",
+        "arrival_time": "2024-04-11T09:30:00",
+        "duration": "1 hour",
+        "class": "business",
+        "cost_usd": 200,
+        "id": 60
+    },
+    {
+        "departure_point": "DOH",
+        "destination_point": "JNB",
+        "departure_time": "2024-04-12T10:00:00",
+        "arrival_time": "2024-04-12T16:00:00",
+        "duration": "6 hours",
+        "class": "first",
+        "cost_usd": 400,
+        "id": 61
+    },
+    {
+        "departure_point": "JNB",
+        "destination_point": "RUH",
+        "departure_time": "2024-04-13T12:30:00",
+        "arrival_time": "2024-04-13T14:30:00",
+        "duration": "2 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 62
+    },
+    {
+        "departure_point": "RUH",
+        "destination_point": "SAW",
+        "departure_time": "2024-04-14T09:00:00",
+        "arrival_time": "2024-04-14T12:00:00",
+        "duration": "3 hours",
+        "class": "business",
+        "cost_usd": 300,
+        "id": 63
+    },
+    {
+        "departure_point": "SAW",
+        "destination_point": "DXB",
+        "departure_time": "2024-04-15T08:00:00",
+        "arrival_time": "2024-04-15T10:00:00",
+        "duration": "2 hours",
+        "class": "first",
+        "cost_usd": 250,
+        "id": 64
+    },
+    {
+        "departure_point": "DXB",
+        "destination_point": "DOH",
+        "departure_time": "2024-04-16T10:30:00",
+        "arrival_time": "2024-04-16T11:30:00",
+        "duration": "1 hour",
+        "class": "economy",
+        "cost_usd": 100,
+        "id": 65
+    },
+    {
+        "departure_point": "DOH",
+        "destination_point": "JNB",
+        "departure_time": "2024-04-17T09:00:00",
+        "arrival_time": "2024-04-17T15:00:00",
+        "duration": "6 hours",
+        "class": "business",
+        "cost_usd": 400,
+        "id": 66
+    },
+    {
+        "departure_point": "JNB",
+        "destination_point": "RUH",
+        "departure_time": "2024-04-18T12:00:00",
+        "arrival_time": "2024-04-18T14:00:00",
+        "duration": "2 hours",
+        "class": "first",
+        "cost_usd": 200,
+        "id": 67
+    },
+    {
+        "departure_point": "RUH",
+        "destination_point": "SAW",
+        "departure_time": "2024-04-19T08:30:00",
+        "arrival_time": "2024-04-19T11:30:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 68
+    },
+    {
+        "departure_point": "SAW",
+        "destination_point": "DXB",
+        "departure_time": "2024-04-20T10:00:00",
+        "arrival_time": "2024-04-20T12:00:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 300,
+        "id": 69
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "YYZ",
+        "departure_time": "2024-04-01T08:00:00",
+        "arrival_time": "2024-04-01T10:00:00",
+        "duration": "2 hours",
+        "class": "economy",
+        "cost_usd": 200,
+        "id": 70
+    },
+    {
+        "departure_point": "YYZ",
+        "destination_point": "ORD",
+        "departure_time": "2024-04-02T10:30:00",
+        "arrival_time": "2024-04-02T12:30:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 71
+    },
+    {
+        "departure_point": "ORD",
+        "destination_point": "ATL",
+        "departure_time": "2024-04-03T09:00:00",
+        "arrival_time": "2024-04-03T11:30:00",
+        "duration": "2.5 hours",
+        "class": "first",
+        "cost_usd": 300,
+        "id": 72
+    },
+    {
+        "departure_point": "ATL",
+        "destination_point": "MEX",
+        "departure_time": "2024-04-04T12:00:00",
+        "arrival_time": "2024-04-04T15:00:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 73
+    },
+    {
+        "departure_point": "MEX",
+        "destination_point": "BOG",
+        "departure_time": "2024-04-05T08:00:00",
+        "arrival_time": "2024-04-05T10:30:00",
+        "duration": "2.5 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 74
+    },
+    {
+        "departure_point": "BOG",
+        "destination_point": "JFK",
+        "departure_time": "2024-04-06T10:30:00",
+        "arrival_time": "2024-04-06T14:00:00",
+        "duration": "3.5 hours",
+        "class": "first",
+        "cost_usd": 350,
+        "id": 75
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "YYZ",
+        "departure_time": "2024-04-07T09:00:00",
+        "arrival_time": "2024-04-07T11:00:00",
+        "duration": "2 hours",
+        "class": "economy",
+        "cost_usd": 200,
+        "id": 76
+    },
+    {
+        "departure_point": "YYZ",
+        "destination_point": "ORD",
+        "departure_time": "2024-04-08T12:00:00",
+        "arrival_time": "2024-04-08T14:00:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 77
+    },
+    {
+        "departure_point": "ORD",
+        "destination_point": "ATL",
+        "departure_time": "2024-04-09T10:30:00",
+        "arrival_time": "2024-04-09T13:00:00",
+        "duration": "2.5 hours",
+        "class": "first",
+        "cost_usd": 300,
+        "id": 78
+    },
+    {
+        "departure_point": "ATL",
+        "destination_point": "MEX",
+        "departure_time": "2024-04-10T08:00:00",
+        "arrival_time": "2024-04-10T11:00:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 79
+    },
+    {
+        "departure_point": "MEX",
+        "destination_point": "BOG",
+        "departure_time": "2024-04-11T12:00:00",
+        "arrival_time": "2024-04-11T14:30:00",
+        "duration": "2.5 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 80
+    },
+    {
+        "departure_point": "BOG",
+        "destination_point": "JFK",
+        "departure_time": "2024-04-12T09:00:00",
+        "arrival_time": "2024-04-12T12:30:00",
+        "duration": "3.5 hours",
+        "class": "first",
+        "cost_usd": 350,
+        "id": 81
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "YYZ",
+        "departure_time": "2024-04-13T10:30:00",
+        "arrival_time": "2024-04-13T12:30:00",
+        "duration": "2 hours",
+        "class": "economy",
+        "cost_usd": 200,
+        "id": 82
+    },
+    {
+        "departure_point": "YYZ",
+        "destination_point": "ORD",
+        "departure_time": "2024-04-14T09:00:00",
+        "arrival_time": "2024-04-14T11:00:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 83
+    },
+    {
+        "departure_point": "ORD",
+        "destination_point": "ATL",
+        "departure_time": "2024-04-15T12:00:00",
+        "arrival_time": "2024-04-15T14:30:00",
+        "duration": "2.5 hours",
+        "class": "first",
+        "cost_usd": 300,
+        "id": 84
+    },
+    {
+        "departure_point": "ATL",
+        "destination_point": "MEX",
+        "departure_time": "2024-04-16T09:00:00",
+        "arrival_time": "2024-04-16T12:00:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 150,
+        "id": 85
+    },
+    {
+        "departure_point": "MEX",
+        "destination_point": "BOG",
+        "departure_time": "2024-04-17T12:30:00",
+        "arrival_time": "2024-04-17T15:00:00",
+        "duration": "2.5 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 86
+    },
+    {
+        "departure_point": "BOG",
+        "destination_point": "JFK",
+        "departure_time": "2024-04-18T10:00:00",
+        "arrival_time": "2024-04-18T13:30:00",
+        "duration": "3.5 hours",
+        "class": "first",
+        "cost_usd": 350,
+        "id": 87
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "YYZ",
+        "departure_time": "2024-04-19T08:30:00",
+        "arrival_time": "2024-04-19T10:30:00",
+        "duration": "2 hours",
+        "class": "economy",
+        "cost_usd": 200,
+        "id": 88
+    },
+    {
+        "departure_point": "YYZ",
+        "destination_point": "ORD",
+        "departure_time": "2024-04-20T10:00:00",
+        "arrival_time": "2024-04-20T12:00:00",
+        "duration": "2 hours",
+        "class": "business",
+        "cost_usd": 250,
+        "id": 89
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "CDG",
+        "departure_time": "2024-04-01T08:00:00",
+        "arrival_time": "2024-04-01T11:00:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 300,
+        "id": 90
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "FRA",
+        "departure_time": "2024-04-02T10:00:00",
+        "arrival_time": "2024-04-02T18:00:00",
+        "duration": "8 hours",
+        "class": "business",
+        "cost_usd": 400,
+        "id": 91
+    },
+    {
+        "departure_point": "HND",
+        "destination_point": "DOH",
+        "departure_time": "2024-04-03T08:30:00",
+        "arrival_time": "2024-04-03T13:00:00",
+        "duration": "4.5 hours",
+        "class": "first",
+        "cost_usd": 500,
+        "id": 92
+    },
+    {
+        "departure_point": "DOH",
+        "destination_point": "CDG",
+        "departure_time": "2024-04-04T10:00:00",
+        "arrival_time": "2024-04-04T13:00:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 300,
+        "id": 93
+    },
+    {
+        "departure_point": "HND",
+        "destination_point": "ICN",
+        "departure_time": "2024-04-05T09:00:00",
+        "arrival_time": "2024-04-05T11:30:00",
+        "duration": "2.5 hours",
+        "class": "business",
+        "cost_usd": 350,
+        "id": 94
+    },
+    {
+        "departure_point": "HND",
+        "destination_point": "IST",
+        "departure_time": "2024-04-06T10:30:00",
+        "arrival_time": "2024-04-06T15:30:00",
+        "duration": "5 hours",
+        "class": "first",
+        "cost_usd": 600,
+        "id": 95
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "MEX",
+        "departure_time": "2024-04-07T08:00:00",
+        "arrival_time": "2024-04-07T12:00:00",
+        "duration": "4 hours",
+        "class": "economy",
+        "cost_usd": 350,
+        "id": 96
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "BOG",
+        "departure_time": "2024-04-08T10:00:00",
+        "arrival_time": "2024-04-08T14:30:00",
+        "duration": "4.5 hours",
+        "class": "business",
+        "cost_usd": 450,
+        "id": 97
+    },
+    {
+        "departure_point": "IST",
+        "destination_point": "AMS",
+        "departure_time": "2024-04-09T09:00:00",
+        "arrival_time": "2024-04-09T11:30:00",
+        "duration": "2.5 hours",
+        "class": "first",
+        "cost_usd": 300,
+        "id": 98
+    },
+    {
+        "departure_point": "IST",
+        "destination_point": "MUC",
+        "departure_time": "2024-04-10T10:00:00",
+        "arrival_time": "2024-04-10T12:30:00",
+        "duration": "2.5 hours",
+        "class": "economy",
+        "cost_usd": 250,
+        "id": 99
+    },
+    {
+        "departure_point": "MUC",
+        "destination_point": "DOH",
+        "departure_time": "2024-04-11T08:30:00",
+        "arrival_time": "2024-04-11T12:30:00",
+        "duration": "4 hours",
+        "class": "business",
+        "cost_usd": 400,
+        "id": 100
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "CDG",
+        "departure_time": "2024-04-12T08:30:00",
+        "arrival_time": "2024-04-12T11:30:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 300,
+        "id": 101
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "FRA",
+        "departure_time": "2024-04-13T01:00:00",
+        "arrival_time": "2024-04-13T09:10:00",
+        "duration": "8 hours",
+        "class": "business",
+        "cost_usd": 400,
+        "id": 102
+    },
+    {
+        "departure_point": "HND",
+        "destination_point": "DOH",
+        "departure_time": "2024-04-14T08:00:00",
+        "arrival_time": "2024-04-14T12:00:00",
+        "duration": "4 hours",
+        "class": "first",
+        "cost_usd": 500,
+        "id": 103
+    },
+    {
+        "departure_point": "DOH",
+        "destination_point": "CDG",
+        "departure_time": "2024-04-15T09:30:00",
+        "arrival_time": "2024-04-15T12:30:00",
+        "duration": "3 hours",
+        "class": "economy",
+        "cost_usd": 300,
+        "id": 104
+    },
+    {
+        "departure_point": "HND",
+        "destination_point": "ICN",
+        "departure_time": "2024-04-16T10:30:00",
+        "arrival_time": "2024-04-16T13:00:00",
+        "duration": "2.5 hours",
+        "class": "business",
+        "cost_usd": 350,
+        "id": 105
+    },
+    {
+        "departure_point": "HND",
+        "destination_point": "IST",
+        "departure_time": "2024-04-17T08:00:00",
+        "arrival_time": "2024-04-17T13:00:00",
+        "duration": "5 hours",
+        "class": "first",
+        "cost_usd": 600,
+        "id": 106
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "MEX",
+        "departure_time": "2024-04-18T09:00:00",
+        "arrival_time": "2024-04-18T13:00:00",
+        "duration": "4 hours",
+        "class": "economy",
+        "cost_usd": 350,
+        "id": 107
+    },
+    {
+        "departure_point": "JFK",
+        "destination_point": "BOG",
+        "departure_time": "2024-04-19T10:30:00",
+        "arrival_time": "2024-04-19T14:30:00",
+        "duration": "4 hours",
+        "class": "business",
+        "cost_usd": 450,
+        "id": 108
+    },
+    {
+        "departure_point": "IST",
+        "destination_point": "AMS",
+        "departure_time": "2024-04-20T08:00:00",
+        "arrival_time": "2024-04-20T10:30:00",
+        "duration": "2.5 hours",
+        "class": "first",
+        "cost_usd": 300,
+        "id": 109
+    },
+    {
+        "departure_point": "IST",
+        "destination_point": "MUC",
+        "departure_time": "2024-04-21T10:00:00",
+        "arrival_time": "2024-04-21T12:30:00",
+        "duration": "2.5 hours",
+        "class": "economy",
+        "cost_usd": 250,
+        "id": 110
+    }
+]

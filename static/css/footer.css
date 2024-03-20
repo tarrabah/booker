@@ -1,0 +1,25 @@
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--footer-bg-color);
+    height: fit-content;
+}
+
+#footer_main_area {
+    margin: 0 auto;
+    width: 70%;
+    padding: 20px 10%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+a.footer_nav_item {
+    color: var(--second-font-color);
+    margin: 10px;
+    text-decoration:none;
+}
+
+a.footer_nav_item:hover {
+    color: var(--font-color);
+}

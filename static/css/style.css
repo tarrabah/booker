@@ -1,0 +1,207 @@
+:root {
+    --border-color: black;
+    --header-bg-color: white;/**/
+    --footer-bg-color: #25aae2;
+    --second-font-color: white;
+    --font-color: black;
+    --item-selected: #b0b0bd;
+    --bg-color: white;
+}
+
+[data-theme="dark"] {
+    --border-color: white;
+    --item-selected: white;
+    --header-bg-color: black;/**/
+    --font-color: white;
+    --bg-color: black;
+}
+
+body {
+    color: var(--font-color);
+    font-family: Sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 0px;
+    padding: 0px;
+    background-color: var(--bg-color);
+}
+
+div.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+div.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+div.flex_space_between
+{
+    justify-content: space-between;
+}
+
+div.common_content_container {
+    padding: 20px 20px 30px 20px;
+    margin-bottom: 10px;
+}
+
+
+p.common_text {
+    padding: 5px;
+    margin: 0;
+}
+
+p.regular_text {
+    color: var(--font-color);
+    text-align: justify;
+    text-indent: 25px;
+}
+
+p.pseudo_paragraph {
+    white-space: break-space;
+    text-align: justify;
+    text-indent: 25px;
+    margin: 5px;
+}
+
+p {
+    text-indent: 25px;
+    margin: 10px 20px;
+    text-align: justify;
+}
+
+#button_book {
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--footer-bg-color);
+    border: none;
+    width: 200px;
+    height: 100px;
+    color: var(--second-font-color);
+    font-size: 30px;
+    font-weight: bold;
+    right: -50%;
+    transform: translateX(-50%);
+    top: 65%;
+}
+
+#button_book:hover {
+    outline: solid white;
+    outline-offset: 2px;
+    transition: linear 0.3s;
+}
+
+#content {
+    width: 70%;
+    margin: 0 auto 5% auto;
+}
+
+hr.divider {
+    width: 100%;
+}
+hr.subdivider {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.cool_box {
+    box-shadow: 0px 0px 10px 2px #4542425c;
+    border: 1px transparent;
+    border-radius: 8px;
+}
+
+h1 {
+    color: var(--font-color);
+}
+
+div.card {
+    width: 400px;
+    background-size: contain;
+    background-position: center;
+    height: 266px;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+div.card:hover * {
+    display: block !important;
+}
+
+#card_1 {
+    background-image: url('/static/img/madrid.jpeg');
+}
+
+#card_2 {
+    background-image: url('/static/img/london.jpg');
+}
+
+div.card_title {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    top: 216px;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 22px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+a.car_ref {
+    text-decoration: none;
+}
+
+.roller {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1000px)
+{
+    #content {
+        width: 100%;
+    }
+    div.contact_content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 2% 10% 2% 0;
+    }
+    #last_name_field_container, #reason_field_container, #email_field_container {
+        grid-column-start: 1;
+    }
+    #comment_container {
+        width: 90%;
+    }
+    #header_main_area {
+        width: 100%;
+    }
+    #main_form {
+        grid-template-columns: 1fr;
+        grid-template-row: repeat(4, 1fr);
+    }
+    #book_main_grid {
+        grid-template-columns: 1fr;
+        grid-template-row: repeat(2, 1fr);
+    }
+    form.form_personal_data {
+        grid-template-columns: 1fr;
+        grid-template-row: repeat(3, 1fr);
+    }
+    div.info_to_gather {
+        grid-template-columns: 1fr;
+        grid-template-row: repeat(3, 1fr);
+    }
+    #col_1 {
+        grid-row-start: 2;
+    }
+    #col_2 {
+        grid-row-start: 1;
+    }
+}
+
+

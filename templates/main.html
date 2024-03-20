@@ -1,0 +1,45 @@
+{% extends "base_template.html" %}
+
+{% block stylesheet%}
+<link rel="stylesheet" type="text/css" href="static/css/banner.css">
+{% endblock %}
+
+{% block tab_title %}
+Booker
+{% endblock %}
+
+{% block content %}
+<div class="flex_column">
+    <div id='main_banner' class="banner">
+        <div id="banner_top" class="banner_text main_banner_text">
+            Visit places you have never been
+        </div>
+        <div id="banner_bottom" class="banner_text main_banner_text">
+            With Booker
+        </div>
+        <button id="button_book" onclick="location.href='/flight'">Book Now</button>
+    </div>
+    <div class="common_content_container  cool_box">
+        <div class="flex_column">
+            <h3>Hot Destinations</h3>
+            <div class="flex_row roller">
+                <a href="/madrid" class='car_ref'>
+                    <div class='card' id='card_1' >
+                        <div  class="card_title">
+                            About Madrid!
+                        </div>
+                    </div>
+                </a>
+                <a href="/london" class='car_ref'>
+                    <div class='card'  id='card_2' >
+                        <div class="card_title">
+                            About London!
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

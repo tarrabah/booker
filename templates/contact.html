@@ -1,0 +1,89 @@
+{% extends "base_template.html" %}
+
+{% block stylesheet%}
+<link rel="stylesheet" type="text/css" href="static/css/contact.css">
+{% endblock %}
+
+{% block scripts %}
+<script src="static/js/contact.js"></script>
+{% endblock %}
+
+{% block page_title %}
+Contact us
+{% endblock %}
+
+{% block tab_title %}
+Contact us
+{% endblock %}
+
+{% block content %}
+<div class="common_content_container cool_box">
+    <h3>Please, use the following form to contact us!</h3>
+    <div class="contact_content">
+        <div class="flex_column">
+            <label for="input_first_name" class="field_title">First Name</label>
+            <input autocomplete="off" id="input_first_name" class="contact_input" type="text" placeholder="Alexander" oninput="check_input(this, 'first_name_tooltip')">
+            <div id="first_name_tooltip" class="field_tooltip">Please, complete this field!</div>
+        </div>
+
+        <div id='last_name_field_container' class="flex_column">
+            <label for="input_last_name" class="field_title">Last Name</label>
+            <input autocomplete="off" id="input_last_name" class="contact_input" type="text" placeholder="Miller" oninput="check_input(this, 'last_name_tooltip')">
+            <div id="last_name_tooltip" class="field_tooltip">Please, complete this field!</div>
+        </div>
+        <div id="email_field_container" class="flex_column">
+            <label for="email" class="field_title">Email</label>
+            <input autocomplete="off" id='email' class="contact_input" type="email" placeholder="example@email.com" oninput="check_email_input()">
+            <div id="email_tooltip" class="field_tooltip">Please, complete this field!</div>
+        </div>
+
+        <div id="reason_field_container" class="flex_column">
+            <label for='reason' class="field_title">Reason of Contact</label>
+            <select autocomplete="off" id="reason"  class="reason_select" onchange="check_reason_tooltip()">
+                <option value="" disabled selected="selected" hidden>-----</option>
+                <option value="bug">Bug Report</option>
+                <option value="quest">Questions</option>
+                <option value="suggest">Suggestions</option>
+            </select>
+            <div id="reason_tooltip" class="field_tooltip">Please, select the option!</div>
+        </div>
+        <div id="contact_comment" class="flex_column">
+            <label for='comment_container' class="field_title">Comment</label>
+            <div id="comment_container" class="flex_column">
+                <textarea id="comment"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div id="button_container">
+        <button id="submit_button" onclick="submit()">Submit</button>
+        <div id="submit_tooltip"></div>
+    </div>
+</div>
+
+<div class="common_content_container cool_box">
+    <h3>Our headquarters are located at:</h3>
+    <p class="pseudo_paragraph">
+        456 Innovation Boulevard
+    </p>
+    <p class="pseudo_paragraph">
+        Tech Town, Silicon Valley 98765
+    </p>
+    <h3>
+        Legal mailing address
+    </h3>
+    <p class="pseudo_paragraph">
+        101 Progress Avenue
+    </p>
+    <p class="pseudo_paragraph">
+        Metro Center, Urbania 12345
+    </p>
+    <p class="pseudo_paragraph">
+        Mountain View, Colorado 67890
+    </p>
+</div>
+<div class="common_content_container cool_box">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.120859005852!2d-0.11958333115844774!3d51.50293540838063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2srs!4v1709819823847!5m2!1sen!2srs" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+{% endblock %}
+

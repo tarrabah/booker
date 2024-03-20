@@ -1,0 +1,140 @@
+{
+  "KUL" : {
+    "name": "Kuala Lumpur International Airport",
+    "code": "KUL",
+    "country": "Malaysia",
+    "city": "Kuala Lumpur"
+  },
+  "HND" : {
+    "name": "Haneda Airport",
+    "code": "HND",
+    "country": "Japan",
+    "city": "Tokyo"
+  },
+  "ICN" : {
+    "name": "Incheon International Airport",
+    "code": "ICN",
+    "country": "South Korea",
+    "city": "Seoul"
+  },
+  "BKK" : {
+    "name": "Suvarnabhumi Airport",
+    "code": "BKK",
+    "country": "Thailand",
+    "city": "Bangokok"
+  },
+  "SIN" : {
+    "name": "Changi Airport",
+    "code": "SIN",
+    "country": "Singapore",
+    "city": "Singapore"
+  },
+  "LHR" : {
+    "name": "Heathrow Airport",
+    "code": "LHR",
+    "country": "United Kingdom",
+    "city": "London"
+  },
+  "AMS" : {
+    "name": "Amsterdam Airport Schiphol",
+    "code": "AMS",
+    "country": "Netherlands",
+    "city": "Amsterdam"
+  },
+  "FRA" : {
+    "name": "Frankfurt Airport",
+    "code": "FRA",
+    "country": "Germany",
+    "city": "Frankfurt Rhine-Main"
+  },
+  "IST" : {
+    "name": "Istanbul Airport",
+    "code": "IST",
+    "country": "Turkey",
+    "city": "Istanbul"
+  },
+  "CDG" : {
+    "name": "Charles de Gaulle Airport",
+    "code": "CDG",
+    "country": "France",
+    "city": "Paris"
+  },
+  "MUC" : {
+    "name": "Munich Airport",
+    "code": "MUC",
+    "country": "Germany",
+    "city": "Munich"
+  },
+  "MAD" : {
+    "name": "Madrid–Barajas",
+    "code": "MAD",
+    "country": "Spain",
+    "city": "Madrid"
+  },
+  "DXB" : {
+    "name": "Dubai International Airport",
+    "code": "DXB",
+    "country": "United Arab Emirates",
+    "city": "Dubai"
+  },
+  "DOH" : {
+    "name": "Hamad International Airport",
+    "code": "DOH",
+    "country": "Qatar",
+    "city": "Doha"
+  },
+  "JNB" : {
+    "name": "O. R. Tambo International Airport",
+    "code": "JNB",
+    "country": "Republic South Africa",
+    "city": "Pretoria"
+  },
+  "RUH" : {
+    "name": "King Khalid International Airport",
+    "code": "RUH",
+    "country": "Saudi Arabia",
+    "city": "Riyad"
+  },
+  "SAW" : {
+    "name": "Istanbul Sabiha Gökçen International Airport",
+    "code": "SAW",
+    "country": "Turkey",
+    "city": "Istanbul"
+  },
+  "JFK" : {
+    "name": "John F. Kennedy International Airport",
+    "code": "JFK",
+    "country": "USA",
+    "city": "New York"
+  },
+  "YYZ" : {
+    "name": "Toronto Pearson International Airport",
+    "code": "YYZ",
+    "country": "Canada",
+    "city": "Toronto"
+  },
+  "ORD" : {
+    "name": "Chicago O'Hare International Airport",
+    "code": "ORD",
+    "country": "USA",
+    "city": "Chicago"
+  },
+  "ATL" : {
+    "name": "Hartsfield–Jackson Atlanta International Airport",
+    "code": "ATL",
+    "country": "USA",
+    "city": "Atlanta"
+  },
+  "MEX" : {
+    "name": "Mexico City International Airport",
+    "code": "MEX",
+    "country": "Mexico",
+    "city": "Mexico"
+  },
+  "BOG" : {
+    "name": "El Dorado International Airport",
+    "code": "BOG",
+    "country": "Colombia",
+    "city": "Bogotá"
+  }
+}

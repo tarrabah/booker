@@ -1,0 +1,61 @@
+{% extends "base_template.html" %}
+
+{% block stylesheet%}
+<link rel="stylesheet" type="text/css" href="static/css/weather.css">
+{% endblock %}
+
+{% block scripts %}
+<script src="static/js/jquery-3.7.1.min.js"></script>
+<script src="static/js/templates.js"></script>
+<script src="static/js/weather.js" defer></script>
+{% endblock %}
+
+{% block page_title %}
+Weather
+{% endblock %}
+
+{% block tab_title %}
+Weather
+{% endblock %}
+
+{% block content %}
+<div class="common_content_container cool_box">
+    <h3 class="form_title">Check weather</h3>
+    <div class="flex_column" id='container_pseudo'>
+        <div class="form_field">
+            <div class="pseudo_input flex_row">
+                <input autocomplete="off" class="destination" placeholder="What place?" id='input' type="text" oninput="select_city.on_input()"  onkeydown="select_city.list_arrows(event)">
+            </div>
+            <div class="flex_column exp" id='list'></div>
+        </div>
+    </div>
+     <div class="flex_column" id='tile_container'>
+        {% for i in range(7)%}
+        <div class="flex_row cool_box flex_space_between tile" id="tile_{{i}}" >
+            <div class="flex_column tile_inner_container">
+                <div id="tile_{{i}}_weekday" class="day">
+                    Date
+                </div>
+                <div id="tile_{{i}}_rest" class="day">
+                    Date
+                </div>
+            </div>
+
+            <div class='weather_code' id="tile_{{i}}_weather_code" >
+            </div>
+            <div class='weather_desc' id="tile_{{i}}_weather_desc" >
+            </div>
+            <div class="temp_container">
+                <div class='big_temp' id="tile_{{i}}_temperature_2m_max" ></div>
+                <div class='small_temp' id="tile_{{i}}_temperature_2m_min"></div>
+            </div>
+            <div class="flex_row rain_container">
+                <img class='drop' src="/static/img/water-drop.png">
+                <div id="tile_{{i}}_precipitation_probability_max" class="rain">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

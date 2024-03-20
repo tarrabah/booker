@@ -1,0 +1,161 @@
+label.field_title {
+    margin: 0 0 10px 0;
+}
+
+input.contact_input {
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    height: 3.5em;
+    background-color: white;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+}
+
+div.field_tooltip {
+    margin: 0 0 10px 0;
+    color: red;
+    padding: 0 0 0 5px;
+    font-size: 14px;
+    width: 90%;
+}
+
+
+
+form.form_personal_data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2% 2% 2%;
+}
+
+h3.form_title {
+    margin: 2% 2% 2% 2%;
+}
+
+#book_main_grid {
+    display: grid;
+    grid-template-columns: 0.75fr 0.25fr;
+    margin: 2% 0 2% 0;
+    column-gap: 10px;
+}
+
+.order_details_item {
+    margin: 2%;
+}
+
+#passenger_data_confirm {
+    color: var(--second-font-color);
+    font-size: 20px;
+    background-color: var(--footer-bg-color);
+    font-weight: bold;
+    border: none;
+    height: 50px;
+    width: 100%;
+}
+#all_valid {
+    width: 100%;
+    margin: 10px auto;
+    color: red;
+}
+
+#seats_valid {
+    width: 100%;
+    margin: 10px auto;
+    color: red;
+}
+
+#seat_selector {
+    overflow: hidden;
+    position: relative;
+}
+
+.seat-selection {
+    text-align: center;
+   margin: 10px auto;
+    width: 100%;
+}
+.seat-row {
+    width: 100%;
+    margin: auto;
+    width: fit-content;
+}
+.seat {
+    display: inline-block;
+    margin: 10px;
+    width: 50px;
+    line-height: 40px;
+    border: 1px solid #000;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.seat:hover {
+    background-color: var(--footer-bg-color);
+    color: var(--second-font-color);
+}
+
+.seat.gap_left {
+    margin-left: 30px
+}
+
+.seat.gap_right {
+    margin-right: 30px
+}
+
+.seat.selected {
+    background-color: var(--footer-bg-color);
+    color: var(--second-font-color);
+}
+
+.tooltip_choose_seat {
+    display: none;
+}
+
+button.half
+{
+    color: var(--second-font-color);
+    font-size: 20px;
+    background-color: var(--footer-bg-color);
+    font-weight: bold;
+    border: none;
+    height: 50px;
+    width: 45%;
+}
+
+button.full
+{
+    color: var(--second-font-color);
+    font-size: 20px;
+    background-color: var(--footer-bg-color);
+    font-weight: bold;
+    border: none;
+    height: 50px;
+    width: 100%;
+}
+
+#choose_seat_label {
+    margin: 0 2%;
+}
+
+div.text_label {
+    margin: 5px 10px 5px 2%;
+}
+div.text_value {
+    margin: 5px 0 5px 0;
+    font-weight: bold;
+}
+#main_form {
+    width: 100%;
+}
+div.info_to_gather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2% 2% 2%;
+}
+
+div.seat_sep {
+    width: 30px;
+}

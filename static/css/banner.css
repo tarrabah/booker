@@ -1,0 +1,33 @@
+div.banner {
+    width: 100%;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+#main_banner {
+    background-image: url('/static/img/letyat-po-nebu-samoleti.orig.jpg');
+    height: 800px;
+}
+
+div.banner_text
+{
+  width: fit-content;
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+div.main_banner_text {
+    color: #52607b;
+    text-shadow: -1px 2px 2px #8d4123;
+}
+
+#banner_top {
+    left: 4%;
+    top: 11%;
+}
+
+#banner_bottom {
+    top: 16%;
+    left: 4%;
+}

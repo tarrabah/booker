@@ -1,0 +1,301 @@
+#form_container {
+    box-shadow: 0px 0px 10px 2px #4542425c;
+    border: 1px transparent;
+    border-radius: 8px;
+}
+
+input.date {
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-family: Sans-serif;
+}
+input.date:focus {
+    border: 1px solid var(--footer-bg-color);
+    outline: 1px solid var(--footer-bg-color);
+}
+
+#confirm_data {
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: var(--footer-bg-color);
+    color: var(--second-font-color);
+    font-weight: bold;
+    margin: 16px auto 0 auto;
+    height: 40px;
+    width: 80px;
+}
+
+div.exp {
+    z-index: 7;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px #4542425c;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    top: 1px;
+}
+
+div.pseudo_input {
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+div.pseudo_input:hover {
+    border: 1px solid grey;
+}
+
+div.pseudo_input:focus-within {
+    border: 1px solid var(--footer-bg-color);
+    outline: 1px solid var(--footer-bg-color)
+}
+
+input.destination {
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--font-color);
+    border: none;
+    margin: auto 0 auto 20px;
+    display: block;
+    width: 100%;
+}
+
+input.destination:focus{
+    outline: none;
+}
+
+#main_form {
+    height: fit-content;
+}
+
+img.input_icon {
+    height: 100%;
+}
+
+#main_form {
+    display: grid;
+    grid-template-columns: 1.25fr 1.25fr 0.75fr 0.75fr;
+    column-gap: 20px;
+    padding: 0 10px;
+}
+
+.form_field {
+    height: 50px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.flight_selector {
+    width: fit-content;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    height: 2em;
+    background-color: white;
+    padding: 0 10px 0 0;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.flight_selector:hover {
+    background-color: #dcdbdb8f;;
+}
+
+.flight_selector option {
+    background-color: white;
+}
+
+#flight_passengers {
+    width: fit-content;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    height: 2em;
+    background-color: white;
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+    margin: 10px;
+}
+
+#from_list {
+    visibility: hidden;
+}
+
+#to_list {
+    visibility: hidden;
+}
+
+div.flight_desc {
+    box-shadow: 0px 0px 10px 2px #4542425c;
+    border: 1px transparent;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+p.list_item {
+    padding: 5px 10px;
+    margin: 0;
+    cursor: pointer;
+    display: none;
+}
+
+details {
+    width: 100%;
+}
+
+summary.flight_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 3% 0 3%;
+}
+
+summary.flight_details::marker {
+    display: none;
+}
+summary.flight_details::after {
+    display: block;
+    content: '▼';
+    float: right;
+    transition: 0.4s;
+    font-size: 1em;
+    margin: auto 0px;
+}
+
+details[open] > summary.flight_details::after {
+  transform: rotate(180deg);
+}
+
+
+details[open] summary.flight_details {
+  border-bottom: 1px solid black;
+}
+
+.passenger_selector {
+position: relative;
+display: inline-block;
+}
+
+#dropdown-content {
+    border: 1px transparent;
+    border-radius: 8px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 0px 10px 2px #4542425c;
+    z-index: 1;
+    padding: 5px;
+    margin-top: 1px;
+}
+
+.category-label {
+    margin-right: 10px;
+}
+
+.passenger-category {
+    display: flex;
+    flex-direction:
+    margin-bottom: 10px;
+}
+
+.passenger-count {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 30px;
+}
+
+.btn:hover {
+background-color: grey;
+}
+
+#human_icon {
+    height: 20px;
+}
+#passenger_inside_btn {
+    background: transparent;
+    border: none;
+}
+
+
+#btn_hide {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+span.flight_tooltip {
+    visibility: hidden;
+    color: red;
+}
+
+button.submit_flight {
+    color: white;
+    font-size: 16px;
+    background-color: var(--footer-bg-color);
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+
+p.flight_details_regular {
+    padding: 10px;
+    height: fit-content;
+}
+p.duration {
+    padding: 7px 10px 7px 10px;
+    margin: 0;
+}
+p.airport_codes {
+    padding: 0 10px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+div.airport_duration {
+    display: inline-flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: auto 0;
+}
+
+div.inside_details {
+    padding: 10px 3%;
+}
+div.inside_details_i {
+   padding: 0px 3%;
+   font-weight: 400;
+}
+
+div.cooldots {
+    transform: rotate(90deg);
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 0px;
+  margin: 0px;
+  left: -13px;
+}

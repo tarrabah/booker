@@ -1,0 +1,262 @@
+{% extends "base_template.html" %}
+
+{% block stylesheet%}
+<link rel="stylesheet" type="text/css" href="static/css/book_page.css">
+{% endblock %}
+
+{% block scripts %}
+<script src="static/js/book_page.js" defer></script>
+{% endblock %}
+
+{% block page_title %}Booking...{% endblock %}
+{% block tab_title %}Booking...{% endblock %}
+
+{% block content %}
+<div id="book_main_grid">
+    <div class='flex_column' id="col_1">
+        <form id='main_form' action="/submit_flight_form" method="POST">
+            <input type='hidden' name='cost' value='{{cost}}'>
+            <input type='hidden' name='flight_type' value='{{flight_type}}'>
+            <input type='hidden' name='date_in' value='{{date_in}}'>
+            <input type='hidden' name='date_out' value='{{date_out}}'>
+            <input type='hidden' name='ticket_cost' value='{{ticket_cost}}'>
+            <input type='hidden' name='' value='{{airport_1}}'>
+            <input type='hidden' name='' value='{{airport_1}}'>
+            <div class="tab" id="tab_0">
+                <div class="common_content_container cool_box flex_column">
+                    <h3 class="form_title">Contact information for all passengers</h3>
+                    <div id='contact_data_form' class="info_to_gather">
+                        <div id="email_field_container" class="flex_column">
+                            <label for="email" class="field_title">Email</label>
+                            <input name='email_1' data-valid='false' autocomplete="off" id='email' class="contact_input" type="email" placeholder="example@email.com" oninput="check_email_input(this)">
+                            <div id="email_tooltip" class="field_tooltip">Please, complete this field!</div>
+                        </div>
+                        <div id="email_confirm_field_container" class="flex_column">
+                            <label for="email_confirm" class="field_title">Confirm Email</label>
+                            <input name='email_2' data-valid='false' autocomplete="off" id='email_confirm' class="contact_input" type="email" placeholder="example@email.com" oninput="check_email_confirm_input(this, 'email')">
+                            <div id="email_confirm_tooltip" class="field_tooltip">Please, complete this field!</div>
+                        </div>
+                        <div id="phone_field_container" class="flex_column">
+                            <label for="phone" class="field_title">Phone number</label>
+                            <input name="phone" data-valid='false' autocomplete="off" id='phone' class="contact_input" type="tel" placeholder="" oninput="check_phone_input(this)">
+                            <div id="phone_tooltip" class="field_tooltip">Please, complete this field!</div>
+                        </div>
+                    </div>
+                </div>
+                {% for i in range(adult_count)%}
+                <div class="common_content_container cool_box  flex_column">
+                    <h3 class="form_title">Passenger {{i + 1}}, adult</h3>
+                    <div id='passenger_{{i}}' class="info_to_gather">
+                        <div class="flex_column">
+                            <label for="input_passenger_{{i}}_first_name" class="field_title">First name</label>
+                            <input name='passenger_{{i}}_first_name' data-valid='false' autocomplete="off" id="input_passenger_{{i}}_first_name" class="contact_input" type="text" placeholder="" oninput="check_input(this, 'tooltip_input_passenger_{{i}}_first_name', 'first_name', 'passenger_{{i}}')">
+                            <div id="tooltip_input_passenger_{{i}}_first_name" class="field_tooltip">Please, complete this field!</div>
+                        </div>
+                        <div class="flex_column">
+                            <label for="input_passenger_{{i}}_last_name" class="field_title">Last Name</label>
+                            <input name='passenger_{{i}}_last_name' data-valid='false' autocomplete="off" id="input_passenger_{{i}}_last_name" class="contact_input" type="text" placeholder="" oninput="check_input(this, 'tooltip_input_passenger_{{i}}_last_name', 'last_name', 'passenger_{{i}}')">
+                            <div id="tooltip_input_passenger_{{i}}_last_name" class="field_tooltip">Please, complete this field!</div>
+                        </div>
+                        <div class="flex_column">
+                            <label for="input_passenger_{{i}}_passport_number" class="field_title">Passport number</label>
+                            <input name='passenger_{{i}}_passport_number' data-valid='false' autocomplete="off" id="input_passenger_{{i}}_passport_number" class="contact_input" type="text" placeholder="" oninput="check_input(this, 'tooltip_input_passenger_{{i}}_passport_number', 'passport_number', 'passenger_{{i}}')">
+                            <div id="tooltip_input_passenger_{{i}}_passport_number" class="field_tooltip">Please, complete this field!</div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% for i in range(child_count)%}
+                <div class="common_content_container cool_box  flex_column">
+                    <h3 class="form_title">Passenger {{adult_count + i + 1}}, child</h3>
+                    <div id='passenger_{{i + adult_count}}' class="info_to_gather">
+                        <div class="flex_column">
+                            <label for="input_passenger_{{adult_count + i}}_first_name" class="field_title">First Name</label>
+                            <input name='passenger_{{adult_count + i}}_first_name' data-valid='false' autocomplete="off" id="input_passenger_{{adult_count + i}}_first_name" class="contact_input" type="text" placeholder="" oninput="check_input(this, 'tooltip_input_passenger_{{adult_count + i}}_first_name', 'first_name', 'passenger_{{adult_count + i}}')">
+                            <div id="tooltip_input_passenger_{{adult_count + i}}_first_name" class="field_tooltip">Please, complete this field!</div>
+                        </div>
+                        <div class="flex_column">
+                            <label for="input_passenger_{{adult_count + i}}_last_name" class="field_title">Last Name</label>
+                            <input name="passenger_{{adult_count + i}}_last_name" data-valid='false' autocomplete="off" id="input_passenger_{{adult_count + i}}_last_name" class="contact_input" type="text" placeholder="" oninput="check_input(this, 'tooltip_input_passenger_{{adult_count +i}}_last_name', 'last_name', 'passenger_{{adult_count + i}}')">
+                            <div id="tooltip_input_passenger_{{adult_count + i}}_last_name" class="field_tooltip">Please, complete this field!</div>
+                        </div>
+                        <div class="flex_column">
+                            <label for="input_passenger_{{adult_count + i}}_passport_number" class="field_title">Passport Number</label>
+                            <input name="passenger_{{adult_count + i}}_passport_number" data-valid='false' autocomplete="off" id="input_passenger_{{adult_count + i}}_passport_number" class="contact_input" type="text" placeholder="" oninput="check_input(this, 'tooltip_input_passenger_{{adult_count + i}}_passport_number', 'passport_number', 'passenger_{{adult_count + i}}')">
+                            <div id="tooltip_input_passenger_{{adult_count + i}}_passport_number" class="field_tooltip">Please, complete this field!</div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <hr class="divider">
+                <button type="button" id='passenger_data_confirm' data-valid="false" onclick="continue_1(this)">Continue ➞</button>
+                <div id="all_valid">Please, complete all required fields</div>
+            </div>
+            <div class="tab" id="tab_1">
+                <div class="common_content_container cool_box flex_column">
+                    <h3 class="form_title">Seat Selection</h3>
+                    <div class="flex_column">
+                        <div class="flex_row ">
+                            <div id="choose_seat_label">Choose seat for:</div>
+                            <div id="tooltip_choose_seat_container">
+                                {% for i in range(adult_count)%}
+                                <div class="tooltip_choose_seat">Passenger {{i + 1}}, adult</div>
+                                {% endfor %}
+                                {% for i in range(child_count)%}
+                                <div class="tooltip_choose_seat">Passenger {{adult_count + i + 1}}, child</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seat-selection">
+                        {% for i in range(10) %}
+                        <div class="seat-row flex_row">
+                            {% for j in ['A', 'B'] %}
+                            <button type="button" class="seat" data-passenger='' onclick="select_seat(this, '{{i+1}}{{j}}')">{{i+1}}{{j}}</button>
+                            {% endfor %}
+                            <div class="seat_sep"></div>
+                            {% for j in ['C', 'D'] %}
+                            <button type="button" class="seat" data-passenger='' onclick="select_seat(this, '{{i+1}}{{j}}')">{{i+1}}{{j}}</button>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <button type="button" class='full' onclick='dec_passenger()'>⭠ Previous passenger</button>
+                </div>
+                <hr class="divider">
+                <div class = "flex_row flex_space_between">
+                    <button type="button" class='half' onclick="showTab(0)">⭠ Back</button>
+                    <button type="button" id='seat_data_confirm'  class='half' data-valid="false" onclick="continue_2(this)">Continue ➞</button>
+                </div>
+                <div id="seats_valid">Please, choose seats for every passenger</div>
+            </div>
+            <div class="tab" id="tab_2">
+                <div class="common_content_container cool_box flex_column">
+                    <h3 class="form_title">Please check the data, if something is wrong you can return to previous steps</h3>
+                    <div class="flex_column">
+                        <h3 class="form_title">Contact_info</h3>
+                        <hr class="subdivider">
+                        <div class="flex_row">
+                            <div class="text_label">Email</div>
+                            <div class="text_value" id="email_checkout"></div>
+                        </div>
+                        <div class="flex_row">
+                            <div class="text_label">Phone number</div>
+                            <div class="text_value" id="phone_checkout"></div>
+                        </div>
+
+                    </div>
+                    {% for i in range(adult_count)%}
+                    <div class="flex_column">
+                        <h3 class="form_title">Passenger {{i + 1}}, adult</h3>
+                        <hr class="subdivider">
+                        <div class="flex_row">
+                            <div class="text_label">First name</div>
+                            <div class="text_value" id="passenger_{{i}}_first_name"></div>
+                        </div>
+                        <div class="flex_row">
+                            <div class="text_label">Last name</div>
+                            <div class="text_value" id="passenger_{{i}}_last_name"></div>
+                        </div>
+                        <div class="flex_row">
+                            <div class="text_label">Passport number</div>
+                            <div class="text_value" id="passenger_{{i}}_passport_number"></div>
+                        </div>
+                        <div class="flex_row">
+                            <div class="text_label">Seat number</div>
+                            <div class="text_value" id="passenger_{{i}}_seat_number"></div>
+                        </div>
+                        <hr class="divider">
+                    </div>
+                    {% endfor %}
+                    {% for i in range(child_count)%}
+                    <div class="flex_column">
+                        <h3 class="form_title">Passenger {{adult_count + i + 1}}, child</h3>
+                        <hr class="subdivider">
+                        <div class="flex_row ">
+                            <div class="text_label">First name</div>
+                            <div class="text_value" id="passenger_{{adult_count + i}}_first_name"></div>
+                        </div>
+                        <div class="flex_row">
+                            <div class="text_label">Last name</div>
+                            <div class="text_value" id="passenger_{{adult_count + i}}_last_name"></div>
+                        </div>
+                        <div class="flex_row">
+                            <div class="text_label">Passport number</div>
+                            <div class="text_value" id="passenger_{{adult_count + i}}_passport_number"></div>
+                        </div>
+                        <div class="flex_row"><div class="text_label">Seat number</div>
+                            <div class="text_value" id="passenger_{{adult_count + i}}_seat_number"></div>
+                        </div>
+                        <hr class="divider">
+                    </div>
+                    {% endfor %}
+                </div>
+                <hr class="divider">
+                <div class = "flex_row flex_space_between">
+                    <button type="button" id='back_to_seats' class='half' onclick="showTab(1)">⭠ Back</button>
+                    <button id='final_confirm' class='half' type="submit">Check out ➞</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <div class=flex_column" id="col_2">
+        <div class="common_content_container cool_box flex_column">
+            <h3 class="form_title">Order details</h3>
+            <hr class="divider">
+            <p class="order_details_item"><b>Departure</b></p>
+            <hr class="subdivider">
+            <div class="order_details_item"><b>Date</b>: {{date_in}} </div>
+            <div class="order_details_item"><b>From:</b> {{airport_1}} at {{time_1}}</div>
+            <div class="order_details_item"><i>{{duration}} in air</i></div>
+            <div class="order_details_item"><b>To: </b>{{airport_2}} at {{time_2}} </div>
+            <hr class="subdivider">
+            {% for i in range(adult_count)%}
+                <div class="flex_row flex_space_between order_details_item">
+                    <div>Passenger {{i + 1}}, adult</div>
+                    <div><b>USD {{ticket_cost}}</b></div>
+                </div>
+            {% endfor %}
+            {% for i in range(child_count)%}
+                <div class="flex_row flex_space_between order_details_item">
+                    <div>Passenger {{adult_count + i + 1}}, child</div>
+                    <div><b>USD {{(ticket_cost * 0.5) | round | int}}</b></div>
+                </div>
+            {% endfor %}
+            {% if (flight_type == 'round') %}
+                <hr class="divider">
+                <p class="order_details_item"><b>Return</b></p>
+                <hr class="subdivider">
+                <div class="order_details_item"><b>Date</b>: {{date_out}} </div>
+                <div class="order_details_item"><b>From:</b> {{airport_2}} at {{time_1}} </div>
+                <div class="order_details_item"><i>{{duration}} in air</i></div>
+                <div class="order_details_item"><b>To: </b>{{airport_1}} at {{time_2}}</div>
+                <hr class="subdivider">
+                {% for i in range(adult_count)%}
+                    <div class="flex_row flex_space_between order_details_item">
+                        <div>Passenger {{i + 1}}, adult</div>
+                        <div><b>USD {{ticket_cost}}</b></div>
+                    </div>
+                {% endfor %}
+                {% for i in range(child_count)%}
+                    <div class="flex_row flex_space_between order_details_item">
+                        <div>Passenger {{adult_count + i + 1}}, child</div>
+                        <div><b>USD {{(ticket_cost * 0.5) | round | int}}</b></div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <hr class="divider">
+            <div class="flex_row flex_space_between order_details_item">
+                <div>Total amount</div>
+                <div><b>USD {{cost}}</b></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
